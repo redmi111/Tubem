@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/notificationContent" android:background="@color/background_notification_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/notificationCover" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/dummy_thumbnail" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@+id/notificationCover" android:layout_above="@+id/notificationButtons">
+        <TextView android:ellipsize="marquee" android:id="@+id/notificationSongName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="title" android:singleLine="true" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+        <TextView android:ellipsize="marquee" android:id="@+id/notificationArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="artist" android:singleLine="true" style="@android:style/TextAppearance.StatusBar.EventContent" />
+        <ProgressBar android:id="@+id/playbackProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <ImageButton android:id="@+id/notificationStop" android:background="#00ffffff" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_close_white_24dp" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/notificationButtons" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toRightOf="@+id/notificationCover" android:layout_alignBottom="@+id/notificationCover" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/notificationPlayPause" android:background="#00ffffff" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_pause_white_24dp" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@+id/notificationRewind" android:background="#00ffffff" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_action_av_fast_rewind" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?audio" android:id="@+id/menu_item_play_audio" android:title="@string/play_audio" app:showAsAction="ifRoom" />
+    <item android:icon="?download" android:id="@+id/menu_item_download" android:title="@string/download" app:showAsAction="ifRoom" />
+    <item android:icon="?cast" android:id="@+id/action_play_with_kodi" android:title="@string/play_with_kodi_title" app:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_item_downloads" android:title="@string/downloads" app:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:title="@string/settings" app:showAsAction="never" />
+</menu>

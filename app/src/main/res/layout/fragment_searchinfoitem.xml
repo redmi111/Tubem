@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:name="org.schabi.newpipe.SearchInfoItemFragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/main_bg" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" ads:layoutManager="LinearLayoutManager" />
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+</RelativeLayout>

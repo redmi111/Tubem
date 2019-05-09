@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/item_main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:id="@+id/itemThumbnailViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/video_item_search_image_right_margin">
+                <ImageView android:id="@+id/itemThumbnailView" android:layout_width="@dimen/video_item_search_thumbnail_image_width" android:layout_height="@dimen/video_item_search_thumbnail_image_height" android:src="@drawable/dummi_thumbnail_playlist" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/list_thumbnail_view_description" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/video_item_search_thumbnail_image_height" android:layout_toRightOf="@+id/itemThumbnailViewContainer">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/video_item_search_title_text_size" android:id="@+id/itemTitleView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@+id/item_button" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
